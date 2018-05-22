@@ -6,7 +6,7 @@ app.use(express.static('static'));
 
 app.set('view engine','ejs');
 
-app.use("/","./routes/list");
+app.use("/",require("./routes/list"));
 
 app.listen(3000, function(){
 	console.log("Listening to port 3000");
