@@ -10,13 +10,15 @@
 	<h2 class='subheader'> Complete your task and remove from the list</h2>
 	<% } %>
 	<div >
+	<!-- TASK LIST -->
 	<% for (var i = 0 ;i < todo_list.length ;i++) {%>
-	 <div class='task'>  <%= todo_list[i] %> </div>
+	<div class='task' ><%= todo_list[i] %> </div>
 	<% } %>
+	<!--  -->
 	</div>
-	<% if (todo_list.length <= 5) { %>
+	<% if (todo_list.length < 5) { %>
 	<form action='/' method="POST">
-		<input type="text" placeholder="Add to your list" class='input'>
+		<input type="text" placeholder="Add to your list" class='input' name = 'item'>
 	</form>
 	<% } %>
 </div>
