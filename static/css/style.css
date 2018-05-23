@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
-@import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Anton|Cabin|Cookie|Modern+Antiqua|Pacifico|Satisfy');
 
 
+body{
+	color:white;
+	background: url('/assets/bg.JPG');
+	background-size: cover;
+}
 .container{
 	width:80%;
 	margin:auto;
@@ -16,7 +21,7 @@
 	text-align: left;
 	color:white;
 	display: block;
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: 'Cookie', sans-serif;
 	padding-left: 5%;
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -26,19 +31,37 @@
 	-webkit-transition: width 1s; 
 	transition: transform text-decoration 1s;	
 	cursor: pointer;
+	font-size: 2em;
 	margin-bottom: 1%;
 }
 
 #clock{
-	font-family: 'Modern Antiqua';
-	font-size:5em;
+	font-family: 'Anton';
+	font-size:8em;
 }
 
 .header{
-	font-family:'Modern Antiqua';
+	font-family:'Satisfy';
+	font-size: 3em;
+}
+
+.subheader{
+	font-family: 'Cabin';
+	font-size: 2em;
 }
 
 .task:hover{
 	transform: scale(1.05);
 	text-decoration: line-through;
 }
+
+.input{
+	color: white;
+	font-family: 'Cookie', sans-serif;	
+	font-size: 3em;
+	margin-top: 3em;
+	border: none;
+	border-bottom :3px solid #A770D3;
+	background-color: transparent;
+}
+

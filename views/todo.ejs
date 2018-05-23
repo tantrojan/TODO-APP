@@ -4,13 +4,21 @@
 	<h1 class='header'> Hello, <%= name %></h1>
 	
 	<div id='clock'></div>
-	
+	<% if (todo_list.length == 0) { %>
+	<h2 class='subheader'> You should be very Busy, So let me help you by noting down your todo list </h2>
+	<% } else { %>
+	<h2 class='subheader'> Complete your task and remove from the list</h2>
+	<% } %>
 	<div >
 	<% for (var i = 0 ;i < todo_list.length ;i++) {%>
 	 <div class='task'>  <%= todo_list[i] %> </div>
 	<% } %>
 	</div>
-
+	<% if (todo_list.length <= 5) { %>
+	<form action='/' method="POST">
+		<input type="text" placeholder="Add to your list" class='input'>
+	</form>
+	<% } %>
 </div>
 
 <% include partials/footer.ejs %> 
