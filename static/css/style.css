@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
+
+
+.container{
+	width:80%;
+	margin:auto;
+}
+
+.center{
+	display: block;
+	text-align: center;
+}
+
+.task{	
+	text-align: left;
+	color:white;
+	display: block;
+	font-family: 'IBM Plex Sans', sans-serif;
+	padding-left: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	transform: scale(1);
+	border-left: 6px solid #A770D3;
+	background-color: #190628;
+	-webkit-transition: width 1s; 
+	transition: transform text-decoration 1s;	
+	cursor: pointer;
+	margin-bottom: 1%;
+}
+
+#clock{
+	font-family: 'Modern Antiqua';
+	font-size:5em;
+}
+
+.header{
+	font-family:'Modern Antiqua';
+}
+
+.task:hover{
+	transform: scale(1.05);
+	text-decoration: line-through;
+}

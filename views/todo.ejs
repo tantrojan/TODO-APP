@@ -1,5 +1,16 @@
 <% include partials/header.ejs %>
 
-<div>
-	<h1> This is Working </h1>
+<div class = 'container center'>
+	<h1 class='header'> Hello, <%= name %></h1>
+	
+	<div id='clock'></div>
+	
+	<div >
+	<% for (var i = 0 ;i < todo_list.length ;i++) {%>
+	 <div class='task'>  <%= todo_list[i] %> </div>
+	<% } %>
+	</div>
+
 </div>
+
+<% include partials/footer.ejs %> 
