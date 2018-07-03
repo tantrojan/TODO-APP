@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-
+var port = process.env.port || 5000;
 //BODY PARSER
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended : false }));
@@ -15,6 +15,6 @@ app.set('view engine','ejs');
 //ROUTES
 app.use("/",require("./routes/list"));
 
-app.listen(8080, function(){
+app.listen(port, function(){
 	console.log("Listening to port 8080");
 });

@@ -21,6 +21,9 @@ router.get("/",function(req,res){
 		{	name : name,
 			todo_list : input_list
 		});
+		// res.send({	name : name,
+		// 	todo_list : input_list
+		// });
 	}
 
 });
