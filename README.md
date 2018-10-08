@@ -6,7 +6,7 @@ An application which keeps the list of things to done { A TODO LIST }.
 <ul>
 <li>Clone the Project </li>
 <li>Open Terminal </li>
-<li>cd TODO-APP </li>
+<li>cd TODO-APP(This changes the directory) </li>
 <li>npm install </li>
 <li>node index </li>
 </ul>
