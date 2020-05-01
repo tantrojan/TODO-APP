@@ -16,5 +16,5 @@ app.set('view engine','ejs');
 app.use("/",require("./routes/list"));
 
 app.listen(port, function(){
-	console.log("Listening to port 8080");
+	console.log(`Listening to port ${port}`);
 });
